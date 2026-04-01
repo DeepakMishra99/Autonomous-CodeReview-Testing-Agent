@@ -14,24 +14,7 @@ Modern software development requires constant iteration, testing, and debugging.
 - Detects failures and fixes bugs autonomously  
 - Produces a final validated report  
 
----
 
-## 📚 Table of Contents
-
-- [Overview](#-overview)
-- [System Architecture](#-system-architecture)
-- [Project Walkthrough](#-project-walkthrough)
-- [Getting Started](#-getting-started)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Usage](#-usage)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Dependencies](#-dependencies)
-- [Examples](#-examples)
-- [Troubleshooting](#-troubleshooting)
-- [Contributors](#-contributors)
-- [License](#-license)
 
 ---
 
@@ -48,6 +31,12 @@ This project automates the development loop with a focus on:
 ## 🧩 System Architecture
 
 At its core, the system operates as a **state machine workflow**:
+
+## 🔄 Workflow
+
+<p align="center">
+  <img src="workflow.png" alt="Autonomous Code Agent Workflow" width="700"/>
+</p>
 
 | Node | Responsibility |
 |------|----------------|
@@ -66,6 +55,10 @@ At its core, the system operates as a **state machine workflow**:
 - Built with **Streamlit**
 - Provides real-time interaction and visibility into execution
 
+<p align="center">
+  <img src="01.png" alt="Autonomous Code Agent Workflow" width="700"/>
+</p>
+
 ### 2. Live Execution
 - Displays step-by-step logs of the agent’s reasoning and actions
 
@@ -73,9 +66,20 @@ At its core, the system operates as a **state machine workflow**:
 - Code runs in a **secure isolated environment**
 - Prevents risk to local systems
 
+
 ### 4. Final Report
 - Outputs production-ready code
 - Includes full audit trail and execution logs
+
+<p align="center">
+  <img src="02.png" alt="Autonomous Code Agent Workflow" width="700"/>
+</p>
+<p align="center">
+  <img src="03.png" alt="Autonomous Code Agent Workflow" width="700"/>
+</p>
+<p align="center">
+  <img src="04.png" alt="Autonomous Code Agent Workflow" width="700"/>
+</p>
 
 ---
 
@@ -84,8 +88,11 @@ At its core, the system operates as a **state machine workflow**:
 ### ✅ Prerequisites
 
 - Python 3.10+
+- Langchain
+- LangGraph
 - E2B API Key
 - Google AI Studio API Key
+- Streamlit
 
 ---
 
