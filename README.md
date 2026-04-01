@@ -1,10 +1,100 @@
-🤖 Autonomous Code AgentAutonomous Code Agent is an agentic workflow built with LangGraph and gemini-3.1-flash-lite-preview that automates the entire software development lifecycle. It doesn't just write code; it reviews its own work, generates unit tests, executes them in a secure E2B Sandbox, and autonomously fixes bugs until the tests pass.✨ OverviewModern software development requires constant iteration. This agent handles the heavy lifting by:Synthesizing logic based on natural language requirements.Self-Correction: It uses test failure logs to "self-heal" its own code.Security First: All generated code is executed in an isolated cloud environment.📍 System ArchitectureThe heart of this project is a state machine that handles the logic of code generation and validation.NodeResponsibility1. Generate CodeTranslates requirements into Python logic.2. Review CodePerforms a static analysis for best practices and security.3. Generate TestsCreates a comprehensive pytest suite for the logic.4. Run TestsExecutes code inside an isolated E2B cloud sandbox.5. Analyze FailuresIdentifies root causes of failures and triggers a loop-back.6. SummaryCompiles a formatted final report with code and logs.📸 Project Walkthrough1. User InterfaceThe project features a Streamlit dashboard for real-time interaction and progress tracking.2. Live ExecutionWatch the agent's thought process unfold through expanded execution logs.3. Sandbox TestingIsolated code execution ensures your local environment stays safe while testing AI logic.4. Final ReportGet a validated, production-ready code block along with a complete audit trail.🚀 Getting StartedPrerequisitesPython 3.10+E2B API KeyGoogle AI Studio API KeyInstallationBash# Clone the repository
+# 🤖 Autonomous Code Agent
+
+An **agentic workflow** built with **LangGraph** and **Gemini 3.1 Flash Lite Preview** that automates the entire software development lifecycle. This system goes beyond simple code generation—it reviews, tests, executes, and **self-heals** its own code until it meets quality standards.
+
+---
+
+## 📌 Introduction
+
+Modern software development requires constant iteration, testing, and debugging. The **Autonomous Code Agent** handles this entire loop automatically:
+
+- Generates code from natural language requirements  
+- Reviews and improves its own output  
+- Writes and executes unit tests  
+- Detects failures and fixes bugs autonomously  
+- Produces a final validated report  
+
+---
+
+## 📚 Table of Contents
+
+- [Overview](#-overview)
+- [System Architecture](#-system-architecture)
+- [Project Walkthrough](#-project-walkthrough)
+- [Getting Started](#-getting-started)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Usage](#-usage)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Dependencies](#-dependencies)
+- [Examples](#-examples)
+- [Troubleshooting](#-troubleshooting)
+- [Contributors](#-contributors)
+- [License](#-license)
+
+---
+
+## ✨ Overview
+
+This project automates the development loop with a focus on:
+
+- 🧠 **Logic Synthesis**: Converts natural language into executable Python code  
+- 🔁 **Self-Correction**: Uses test failure logs to iteratively fix bugs  
+- 🔒 **Security First**: Executes all generated code inside an isolated cloud sandbox  
+
+---
+
+## 🧩 System Architecture
+
+At its core, the system operates as a **state machine workflow**:
+
+| Node | Responsibility |
+|------|----------------|
+| 1. Generate Code | Converts requirements into Python logic |
+| 2. Review Code | Performs static analysis for quality and security |
+| 3. Generate Tests | Creates pytest-based unit tests |
+| 4. Run Tests | Executes code in an isolated E2B sandbox |
+| 5. Analyze Failures | Identifies root causes and loops back |
+| 6. Summary | Produces final validated report |
+
+---
+
+## 📸 Project Walkthrough
+
+### 1. User Interface
+- Built with **Streamlit**
+- Provides real-time interaction and visibility into execution
+
+### 2. Live Execution
+- Displays step-by-step logs of the agent’s reasoning and actions
+
+### 3. Sandbox Testing
+- Code runs in a **secure isolated environment**
+- Prevents risk to local systems
+
+### 4. Final Report
+- Outputs production-ready code
+- Includes full audit trail and execution logs
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Python 3.10+
+- E2B API Key
+- Google AI Studio API Key
+
+---
+
+## ⚙️ Installation
+
+```bash
+# Clone the repository
 git clone https://github.com/DeepakMishra99/Autonomous-CodeReview-Testing-Agent.git
 cd Autonomous-CodeReview-Testing-Agent
 
 # Install dependencies
 pip install -r requirements.txt
-Environment SetupBashexport GOOGLE_API_KEY="your-gemini-key"
-export E2B_API_KEY="your-e2b-key"
-RunBashstreamlit run app.py
-🛠️ Tech StackOrchestration: 📦 LangGraphIntelligence: 🧠 gemini-3.1-flash-lite-previewSecurity: 🛡️ E2B SandboxFrontend: 🎨 Streamlit
