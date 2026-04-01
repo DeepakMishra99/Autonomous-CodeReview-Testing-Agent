@@ -35,7 +35,7 @@ At its core, the system operates as a **state machine workflow**:
 ## 🔄 Workflow
 
 <p align="center">
-  <img src="workflow.png" alt="Autonomous Code Agent Workflow" width="700"/>
+  <img src="workflow.png" alt="Autonomous Code Agent Workflow" width="400" height="600"/>
 </p>
 
 | Node | Responsibility |
@@ -56,7 +56,7 @@ At its core, the system operates as a **state machine workflow**:
 - Provides real-time interaction and visibility into execution
 
 <p align="center">
-  <img src="01.png" alt="Autonomous Code Agent Workflow" width="400" height="600"/>
+  <img src="01.png" alt="Autonomous Code Agent Workflow" width="700" />
 </p>
 
 ### 2. Live Execution
